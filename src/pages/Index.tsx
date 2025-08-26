@@ -1,4 +1,6 @@
 import SiteCard from "@/components/SiteCard";
+import mxvagasPreview from "@/assets/mxvagas-preview.png";
+import mxfornecedoresPreview from "@/assets/mxfornecedores-preview.png";
 
 const Index = () => {
   const sites = [
@@ -7,14 +9,16 @@ const Index = () => {
       description: "Plataforma completa para gestão de vagas de emprego e processos seletivos. Conecte talentos às melhores oportunidades do mercado.",
       url: "https://mxvagas.iacodelabs.com.br/",
       icon: "vagas" as const,
-      gradient: "primary" as const
+      gradient: "primary" as const,
+      image: mxvagasPreview
     },
     {
       title: "MX Fornecedores",
       description: "Sistema integrado para gestão de fornecedores e contratos. Otimize sua cadeia de suprimentos e parcerias comerciais.",
       url: "https://mxsfornecedores.iacodelabs.com.br/",
       icon: "fornecedores" as const,
-      gradient: "secondary" as const
+      gradient: "secondary" as const,
+      image: mxfornecedoresPreview
     }
   ];
 
@@ -31,7 +35,7 @@ const Index = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {sites.map((site, index) => (
             <SiteCard
               key={index}
@@ -40,6 +44,7 @@ const Index = () => {
               url={site.url}
               icon={site.icon}
               gradient={site.gradient}
+              image={site.image}
             />
           ))}
         </div>
