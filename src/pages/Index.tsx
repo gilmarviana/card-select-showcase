@@ -30,7 +30,7 @@ const Index = () => {
             Plataformas MX
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Acesse nossas plataformas especializadas para gestão de recursos humanos e fornecedores. 
+            Modelo de plataformas especializadas para gestão de recursos humanos e fornecedores. 
             Escolha a solução ideal para suas necessidades empresariais.
           </p>
         </div>
